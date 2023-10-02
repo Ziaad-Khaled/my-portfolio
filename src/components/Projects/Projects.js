@@ -2,12 +2,12 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import bestBuyReplica from "../../Assets/Projects/bestBuyReplica.png";
+import compilerSimulator from "../../Assets/Projects/compilerSimulator.png";
+import neuralNetClassifier from "../../Assets/Projects/neuralNetClassifier.png";
+import geneticAlgorithm from "../../Assets/Projects/geneticAlgorithm.png";
+import kMeansClustering from "../../Assets/Projects/kMeansClustering.png";
+import binaryClassificationComparison from "../../Assets/Projects/binaryClassificationComparison.png";
 
 function Projects() {
   return (
@@ -15,75 +15,76 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          <strong className="purple">Portfolio Showcase </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Listed here are all the projects I have been involved in.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={bestBuyReplica}
               isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
+              title="Best buy Replica"
+              description="A microservice-based replica of the Best Buy website was developed. It included containerized apps, database integration, caching, RabbitMQ for intercommunication, and rigorous load testing. Technologies used: Java, Spring Boot, PostgreSQL, MongoDB, Redis, RabbitMQ, Docker, Kubernetes."
+              ghLink="https://github.com/Ziaad-Khaled/best-buy-replica"
+              // demoLink="https://chatify-49.web.app/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={compilerSimulator}
               isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
+              title="Compiler Simulator"
+              description="The Compiler Simulator project explores vital compiler components, such as RegExToNfa (for converting regular expressions to NFAs), NfaToDfa (transforming NFAs into DFAs), FallbackDfa (handling binary strings), CfgLeftRecElim (eliminating left recursion), CfgFirstFollow (computing First and Follow sets), and CfgLl1Parser (LL(1) parsing)."
+              ghLink="https://github.com/Ziaad-Khaled/compiler-simulator"
+              //demoLink="https://blogs.soumya-jit.tech/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={neuralNetClassifier}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Neurral Network Classifier"
+              description="The neuralnet-classifier project trains a neural network for banknote authentication using a simple architecture. It utilizes the Banknote Authentication dataset, split into training, validation, and testing sets. The training process employs batch training and backpropagation. Results include accuracy metrics, presented visually."
+              ghLink="https://github.com/Ziaad-Khaled/neuralnet-classifier"
+              //demoLink="https://editor.soumya-jit.tech/"              
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={geneticAlgorithm}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="Genetic Algorithm"
+              description="The genetic-algorithm project implements a Genetic Algorithm (GA) for optimizing two objective functions, one for global maximum search and another for global minimum search. It offers variable representations, crossover and mutation methods, and provides visualizations and fitness functions for solution quality evaluation."
+              ghLink="https://github.com/Ziaad-Khaled/genetic-algorithm"
+              //demoLink="https://plant49-ai.herokuapp.com/"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={kMeansClustering}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
+              title="K-Means Clustering"
+              description="The K-Means project clusters CIFAR-10 dataset images into airplane, bird, and truck categories using K-means with K=3. It selects the best clustering outcome, assigns majority class labels to clusters, and classifies test images based on Euclidean distances to cluster centers."
+              ghLink="https://github.com/Ziaad-Khaled/k-means-clustering"
               // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={binaryClassificationComparison}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
+              title="Binary Classification Comparison"
+              description="TThe Binary Classification Comparison project analyzes and compares three machine learning models 
+              across three datasets: Heart Disease, Income, and Gene Expression. It involves data preprocessing, training nine 
+              models, and assessing performance metrics like accuracy, precision, recall, and F1-score."
+              ghLink="https://github.com/Ziaad-Khaled/binary-classification-comparison"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
           </Col>
