@@ -8,6 +8,7 @@ import neuralNetClassifier from "../../Assets/Projects/neuralNetClassifier.png";
 import geneticAlgorithm from "../../Assets/Projects/geneticAlgorithm.png";
 import kMeansClustering from "../../Assets/Projects/kMeansClustering.png";
 import binaryClassificationComparison from "../../Assets/Projects/binaryClassificationComparison.png";
+import polynomialRegression from "../../Assets/Projects/polynomialRegression.png";
 
 function Projects() {
   return (
@@ -81,10 +82,23 @@ function Projects() {
               imgPath={binaryClassificationComparison}
               isBlog={false}
               title="Binary Classification Comparison"
-              description="TThe Binary Classification Comparison project analyzes and compares three machine learning models 
+              description="The Binary Classification Comparison project analyzes and compares three machine learning models 
               across three datasets: Heart Disease, Income, and Gene Expression. It involves data preprocessing, training nine 
               models, and assessing performance metrics like accuracy, precision, recall, and F1-score."
               ghLink="https://github.com/Ziaad-Khaled/binary-classification-comparison"
+              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={polynomialRegression}
+              isBlog={false}
+              title="Polynomial Regression"
+              description="The Polynomial Regression project predicts NO2 levels from an air quality dataset. 
+              It covers data preprocessing, handling missing values, transforming date/time features, scaling, 
+              and testing Lasso, Ridge, and ElasticNet regression models."
+              ghLink="https://github.com/Ziaad-Khaled/polynomial-regression"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
           </Col>
