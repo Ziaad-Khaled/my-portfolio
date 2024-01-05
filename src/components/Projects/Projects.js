@@ -9,6 +9,7 @@ import geneticAlgorithm from "../../Assets/Projects/geneticAlgorithm.png";
 import kMeansClustering from "../../Assets/Projects/kMeansClustering.png";
 import binaryClassificationComparison from "../../Assets/Projects/binaryClassificationComparison.png";
 import polynomialRegression from "../../Assets/Projects/polynomialRegression.png";
+import imageSegmentation from "../../Assets/Projects/imageSegmentation.png";
 
 function Projects() {
   return (
@@ -99,6 +100,18 @@ function Projects() {
               It covers data preprocessing, handling missing values, transforming date/time features, scaling, 
               and testing Lasso, Ridge, and ElasticNet regression models."
               ghLink="https://github.com/Ziaad-Khaled/polynomial-regression"
+              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={imageSegmentation}
+              isBlog={false}
+              title="Image Segmentation"
+              description="Using clustering algorithms, this project enhances image segmentation by computing pixel 
+              features and evaluates accuracy with a dataset of cat images and ground-truth segmentations."
+              ghLink="https://github.com/Ziaad-Khaled/image-segmentation-cluster"
               // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
             />
           </Col>
